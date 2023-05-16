@@ -1,0 +1,133 @@
+//-----------------Footer----------------
+footer {
+    padding: 10px 0 10px 0;
+    background-color: hsl(210, 20%, 96%);
+
+    @include largeMobile {
+        padding: 50px 0 50px 0;
+    }
+
+    @include large {
+        padding: 20px 0 20px 0;
+    }
+
+    .supercharge-container {
+        @include superchargeContainer;
+
+        @include largeMobile {
+            @include mobileContainer;
+        }
+
+        .row {
+
+            .col16-2 {
+                display: flex;
+                align-items: center;
+
+                @include largeMobile {
+                    justify-content: center;
+                }
+
+                .footer-logo {
+                    width: 28%;
+                    //order: $bulidBorder;
+
+                    @include largeMobile {
+                        width: 18%;
+                        padding-bottom: 30px; 
+                    }
+                }
+            }
+
+            .col16 {
+                display: block;
+
+                @include largeMobile {
+                    text-align: center;
+                }
+
+                ul {
+                    list-style: $getRid;
+
+                    @include largeMobile {
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    li {
+                        text-decoration: $getRid;
+                        margin-bottom: 10px;
+
+                        @include largeMobile {
+                            margin-bottom: 22px;
+                        }
+
+                        @include large {
+                            margin-bottom: 14px;
+                        }
+
+                        a {
+                            font-family: $mainFont;
+                            font-size: 12px;
+                            color: $mainH1Color;
+                            font-weight: $reg;
+                            text-decoration: $getRid;
+                            //border: $bulidBorder;
+
+                            @include largeMobile {
+                                font-size: 16px;
+                            }
+
+                            @include large {
+                                font-size: 14px;
+                            }
+
+                            &:hover {
+                                color: hsl(0, 0%, 0%);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .col16-2 {
+
+                .icon-div {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    width: 100%;
+                    //border: $bulidBorder;
+
+                    @include largeMobile {
+                        justify-content: space-between;
+                        width: 48%;
+                        padding-top: 10px;
+                    }
+
+                    .footer-link {
+                        height: 100%;
+                        width: 13%;
+                        margin-left: 18px;
+                        //border: $bulidBorder;
+
+                        @include largeMobile {
+                            width: 18%;
+                            margin-left: 0;
+                        }
+
+                        .footer-icon {
+                            width: 100%;
+                            height: 100%;
+                            //border: $bulidBorder;
+
+                            &:hover {
+                                background-color:hsl(0, 7%, 76%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

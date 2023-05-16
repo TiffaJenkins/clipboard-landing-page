@@ -1,0 +1,45 @@
+//------------Imports-------------
+@import "./mixins";
+@import "./header";
+@import "./content";
+@import "./footer";
+
+//---------General fixes----------
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+//---------Useful items-----------
+.row {
+    display: flex;
+
+    @include largeMobile {
+        @include rowStack;
+    }
+}
+
+.col {
+    flex: 1;
+    //border: $bulidBorder;
+}
+
+.col33 {
+    flex: 0 0 33.33%;
+    //border: $bulidBorder;
+
+}
+
+.col16 {
+    flex: 0 0 16.66%;
+    //border: $bulidBorder;
+}
+
+.col16-2 { //for aligned cols
+    flex: 0 0 16.66%;
+    //border: $bulidBorder;
+}

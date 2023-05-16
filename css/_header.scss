@@ -1,0 +1,189 @@
+//------------------Header-------------------
+header {
+    position: relative;
+    padding: 0 0 120px 0; //bottom padding for header section
+
+    .header-container {
+        @include headerContainer;
+        position: relative;
+    
+        .main-background {
+            max-width: 100%;
+            background-repeat: $getRid;
+            background-position: center;
+            background-size: cover; 
+            overflow: hidden;
+
+            @include largeMobile {
+                display: $getRid;
+            }
+        }
+
+        .main-background-mob {
+            display: $getRid;
+    
+            @include largeMobile {
+                display: block;
+                min-width: 100%;
+                background-repeat: $getRid;
+                background-position: center;
+                background-size: cover; 
+                margin: $centerContainer;
+            }
+        }    
+    
+        .main-logo {
+            position: absolute;
+            left: 46%;
+            top: 22%;
+            width: 8%;
+            margin: $centerContainer;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+                width: 36%;
+                left: 32%;
+                top: 19%;
+            }
+
+            @include large {
+                width: 10%;
+                left: 45%;
+                top: 26%;
+            }
+        }
+    
+        .main-h1 {
+            font-family: $mainFont;
+            color: $mainH1Color;
+            font-size: 30px;
+            text-align: center;
+            font-weight: $SemiBold;
+            margin: $centerContainer;
+            margin-top: -50px;
+            margin-bottom: 15px;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+                font-size: 32px;
+                margin-top: -35px;
+                padding: 0 6% 0 6%;
+                line-height: 34px;
+                margin-bottom: 20px;
+            }
+
+            @include large {
+                font-size: 45px;
+                margin-top: -20px;
+                margin-bottom: 20px;
+            }
+        }
+    
+        .main-p {
+            font-family: $mainFont;
+            color: $mainPColor;
+            font-size: 14px;
+            text-align: center;
+            max-width: 50%;
+            padding-bottom: 30px;
+            margin: $centerContainer;
+            //border: $bulidBorder;
+
+            @include laptop {
+                font-size: 16px;
+            }
+
+            @include largeMobile {
+                font-size: 16px;
+                line-height: 25px;
+                max-width: 100%;
+                padding: 0 9% 0 9%;
+                margin-bottom: 50px;
+            }
+
+            @include large {
+                font-size: 20px;
+                padding-bottom: 40px;
+            }
+        }
+    
+        .btn-div {
+            @include flexJustCenter;
+            margin: $centerContainer;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+               align-items: center;
+               flex-direction: column; 
+            }
+    
+            .headerBtnA {
+                text-decoration: $getRid;
+                border: 1px solid $btn1Color;
+                border-radius: 30px;
+                padding: 10px 22px 10px 22px;
+                background-color: $btn1Color;
+                font-family: $mainFont;
+                color: hsl(100 100 100);
+                font-size: 13px;
+                font-weight: $thickReg;
+                margin-right: 5px;
+                box-shadow: 0px 10px 6px -2px rgba(76, 166, 173, 0.242);
+    
+                &:hover {
+                    background-color: hsl(171, 44%, 54%);
+                }
+
+                @include largeMobile {
+                    font-size: 20px;
+                    padding: 12px 65px 12px 65px;
+                    margin-bottom: 18px;
+                }
+
+                @include fold {
+                    font-size: 16px;
+                    padding: 12px 60px 12px 60px;
+                }
+
+                @include large {
+                    font-size: 18px;
+                    padding: 14px 28px 14px 28px;
+                }
+            }
+    
+            .headerBtnB {
+                display: inline-block;
+                text-decoration: $getRid;
+                border: 1px solid $btn2Color;
+                border-radius: 30px;
+                padding: 10px 22px 10px 22px;
+                background-color: $btn2Color;
+                font-family: $mainFont;
+                color: hsl(100 100 100);
+                font-size: 13px;
+                font-weight: $thickReg;
+                margin-left: 5px;
+                box-shadow: 0px 10px 6px -2px rgba(76, 105, 173, 0.242);
+    
+                &:hover {
+                    background-color: hsl(233, 88%, 73%);
+                }
+
+                @include largeMobile {
+                    font-size: 20px;
+                    padding: 12px 70px 12px 55px;
+                }
+
+                @include fold {
+                    font-size: 16px;
+                    padding: 12px 65px 12px 45px;
+                }
+
+                @include large {
+                    font-size: 18px;
+                    padding: 14px 28px 14px 28px;
+                }
+            }
+        }
+    }
+}

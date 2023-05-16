@@ -1,0 +1,109 @@
+//----------------------Variables----------------------
+$mainFont: 'Bai Jamjuree', sans-serif;
+$mainH1Color: hsl(210, 10%, 33%);
+$mainPColor: hsl(201, 11%, 66%);
+$btn1Color: hsl(171, 66%, 44%);
+$btn2Color: hsl(233, 100%, 69%);
+$reg: 400;
+$thickReg: 500;
+$SemiBold: 600;
+$bold: 700;
+$getRid: none;
+$centerContainer: 0 auto;
+$bulidBorder: 1px solid red;
+
+//----------------------Containers---------------------
+@mixin headerContainer {
+    width: 100%;
+    margin: $centerContainer;
+    //border: $bulidBorder;
+}
+
+@mixin snippetsSectionContainer {
+    width: 70%;
+    margin: $centerContainer;
+    //border: $bulidBorder;
+}
+
+@mixin anywhereContainer {
+    width: 100%;
+    margin: $centerContainer;
+    //border: $bulidBorder;
+}
+
+@mixin superchargeContainer {
+    width: 80%;
+    margin: $centerContainer;
+    //border: $bulidBorder;
+}
+
+//----mobile container----
+@mixin mobileContainer {
+    width: 85%;
+    margin: $centerContainer;
+    //border: $bulidBorder;
+}
+
+//--------------------Mobile display-------------------
+@mixin rowStack {
+    flex-direction: column;
+}
+
+
+//------------------------Flex--------------------------
+//----Justify----
+@mixin flexJustCenter {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+//-------------------Responsive mixins------------------
+@mixin fold {
+    @media (max-width: 342px) {
+        @content;
+    }
+}
+
+@mixin standardMobile {
+    @media (max-width: 436px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 507px) {
+        @content;
+    }
+}
+
+@mixin largeMobile {
+    @media (max-width: 675px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 820px) {
+        @content;
+    } 
+}
+
+@mixin largeTablet {
+    @media (max-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: 1330px) {
+        @content;
+    }
+}

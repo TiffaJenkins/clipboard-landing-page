@@ -1,0 +1,523 @@
+//---------------main content-----------------
+//--------------------------------------------
+//------Snippets section------
+.snippets-section {
+    padding: 0 0 150px 0;
+    //border: $bulidBorder;
+
+    @include laptop { //wtaf is going on, how is my laptop same size as Nest Hub?
+        padding: 0 0 200px 0;
+    }
+
+    @include largeMobile {
+        padding: 0 0 80px 0;
+    }
+
+    @include large {
+        padding: 0 0 350px 0;
+    }
+
+    .header-container {
+        @include headerContainer;
+
+        @include largeMobile {
+            @include mobileContainer;
+        }
+
+        .main-h2 {
+            font-family: $mainFont;
+            color: $mainH1Color;
+            font-weight: $SemiBold;
+            text-align: center;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+                width: 80%;
+                line-height: 25px;
+                margin: $centerContainer;
+            }
+
+            @include large {
+                font-size: 30px;
+            }
+        }
+
+        .main-p {
+            font-family: $mainFont;
+            color: $mainPColor;
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            max-width: 50%;
+            padding-bottom: 50px;
+            margin: $centerContainer;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+                min-width: 100%;
+                margin-top: 20px;
+                font-size: 15px;
+                line-height: 24px;
+                padding: 0 12px 50px 12px;
+            }
+
+            @include large {
+                font-size: 18px;
+                line-height: 25px;
+                padding-bottom: 70px;
+            }
+        }
+    }
+    
+    .snippets-section-container {
+        @include snippetsSectionContainer;
+
+        @include largeMobile {
+            @include mobileContainer;
+        }
+
+        .row {
+
+            .col {
+                position: relative;
+
+                .snippets-img {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 170%;
+                    overflow: hidden;
+                    //border: $bulidBorder;
+
+                    @include largeMobile { 
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        right: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .col {
+                padding-left: 75px;
+                padding-top: 20px;
+
+                @include largeMobile {
+                    padding: 0;
+                }
+
+                @include large {
+                    padding-left: 105px;
+                }
+
+                .main-h4 {
+                    font-family: $mainFont;
+                    color: $mainH1Color;
+                    font-weight: $SemiBold;
+                    margin-bottom: 14px; 
+                    //border: $bulidBorder;
+
+                    @include largeMobile {
+                        text-align: center;
+                        font-size: 20px;
+                    }
+
+                    @include large {
+                        font-size: 20px;
+                    }
+                }
+
+                .main-h4-p {
+                    font-family: $mainFont;
+                    color: $mainPColor;
+                    font-weight: $reg;
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-bottom: 40px;
+                    //border: $bulidBorder;
+
+                    @include largeMobile {
+                        text-align: center;
+                        font-size: 15px;
+                        padding: 8px;
+                    }
+
+                    @include large {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//------Anywhere section------
+.anywhere-section {
+    padding: 0 0 50px 0;
+
+    @include largeMobile {
+        padding: 0 0 60px 0;
+    }
+
+    .anywhere-container {
+        @include anywhereContainer;
+
+        @include largeMobile {
+            @include mobileContainer;
+        }
+
+        .main-h2 {
+            font-family: $mainFont;
+            color: $mainH1Color;
+            font-weight: $SemiBold;
+            text-align: center;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+                width: 80%;
+                line-height: 25px;
+                margin: $centerContainer;
+            }
+
+            @include large {
+                font-size: 30px;
+            }
+        }
+
+        .main-p {
+            font-family: $mainFont;
+            color: $mainPColor;
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            max-width: 50%;
+            padding-bottom: 50px;
+            margin: $centerContainer;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+                min-width: 95%;
+                margin-top: 20px;
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            @include large {
+                font-size: 18px;
+                line-height: 25px;
+                padding-bottom: 70px;
+            }
+        }
+
+        .anywhere-img {
+            display: block;
+            width: 60%;
+            margin: $centerContainer;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+                width: 100%;
+            }
+        }
+    }
+}
+
+//------Supercharge section------
+.supercharge-section {
+    padding: 0 0 50px 0;
+
+    @include largeMobile {
+        padding: 0 0 70px 0;
+    }
+
+    @include large {
+        padding: 0 0 70px 0;
+    }
+
+    .anywhere-container {
+
+        @include largeMobile {
+            @include mobileContainer;
+        }
+
+        .main-h2 {
+            font-family: $mainFont;
+            color: $mainH1Color;
+            font-weight: $SemiBold;
+            text-align: center;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+                width: 80%;
+                line-height: 25px;
+                margin: $centerContainer;
+            }
+
+            @include large {
+                font-size: 30px;
+            }
+        }
+
+        .main-p {
+            font-family: $mainFont;
+            color: $mainPColor;
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            max-width: 50%;
+            padding-bottom: 50px;
+            margin: $centerContainer;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+                min-width: 95%;
+                margin-top: 20px;
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            @include large {
+                font-size: 18px;
+                line-height: 25px;
+                padding-bottom: 70px;
+            }
+        }
+    }
+
+    .supercharge-container {
+        @include superchargeContainer;
+
+        @include largeMobile {
+            @include mobileContainer;
+        }
+
+        .row {
+            
+            .col33 {
+                text-align: center;
+
+                .supercharge-icon {
+                    height: 15%;
+                    //border: $bulidBorder;
+                }
+
+                .main-h4 {
+                    font-family: $mainFont;
+                    color: $mainH1Color;
+                    font-weight: $SemiBold;
+                    margin-bottom: 14px; 
+                    //border: $bulidBorder;
+
+                    @include largeMobile {
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    @include large {
+                        font-size: 20px;
+                    }
+                }
+
+                .main-h4-p {
+                    font-family: $mainFont;
+                    color: $mainPColor;
+                    font-weight: $reg;
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-bottom: 40px;
+                    padding: 5px;
+                    //border: $bulidBorder;
+
+                    @include largeMobile {
+                        font-size: 15px;
+                        margin-top: 0;
+                    }
+
+                    @include large {
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//------Icon section------
+.logo-section {
+    padding: 0 0 100px 0;
+
+    @include largeMobile {
+        padding: 0 0 50px 0;
+    }
+
+    .supercharge-container {
+        @include superchargeContainer;
+
+        @include largeMobile {
+            @include mobileContainer;
+        }
+
+        .logo-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include largeMobile {
+                flex-direction: column;
+            }
+
+            .logo-section-img {
+                width: 13%;
+                height: 50%;
+                //border: $bulidBorder;
+
+                @include largeMobile {
+                    width: 45%;
+                    margin-bottom: 60px;
+                }
+            } 
+        }
+    }
+}
+
+//-----Download section------
+.download-section {
+    padding: 0 0 100px 0;
+
+    @include largeMobile {
+        padding: 0 0 140px 0;
+    }
+
+    .anywhere-container {
+        @include anywhereContainer;
+
+        @include largeMobile {
+            @include mobileContainer;
+        }
+
+        .main-h2 {
+            font-family: $mainFont;
+            color: $mainH1Color;
+            font-weight: $SemiBold;
+            text-align: center;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+                width: 80%;
+                line-height: 25px;
+                margin: $centerContainer;
+            }
+
+            @include large {
+                font-size: 30px;
+            }
+        }
+
+        .main-p {
+            font-family: $mainFont;
+            color: $mainPColor;
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            max-width: 50%;
+            padding-bottom: 50px;
+            margin: $centerContainer;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+                min-width: 95%;
+                margin-top: 20px;
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            @include large {
+                font-size: 18px;
+                line-height: 25px;
+                padding-bottom: 70px;
+            }
+        }
+
+        .btn-div {
+            @include flexJustCenter;
+            margin: $centerContainer;
+            //border: $bulidBorder;
+
+            @include largeMobile {
+               align-items: center;
+               flex-direction: column; 
+            }
+    
+            .headerBtnA {
+                text-decoration: $getRid;
+                border: 1px solid $btn1Color;
+                border-radius: 30px;
+                padding: 10px 22px 10px 22px;
+                background-color: $btn1Color;
+                font-family: $mainFont;
+                color: hsl(100 100 100);
+                font-size: 13px;
+                font-weight: $thickReg;
+                margin-right: 5px;
+                box-shadow: 0px 10px 6px -2px rgba(76, 166, 173, 0.242);
+    
+                &:hover {
+                    background-color: hsl(171, 44%, 54%);
+                }
+
+                @include largeMobile {
+                    font-size: 20px;
+                    padding: 12px 65px 12px 65px;
+                    margin-bottom: 18px;
+                }
+
+                @include fold {
+                    font-size: 13px;
+                    padding: 12px 60px 12px 60px;
+                }
+
+                @include large {
+                    font-size: 18px;
+                    padding: 14px 28px 14px 28px;
+                }
+            }
+    
+            .headerBtnB {
+                display: inline-block;
+                text-decoration: $getRid;
+                border: 1px solid $btn2Color;
+                border-radius: 30px;
+                padding: 10px 22px 10px 22px;
+                background-color: $btn2Color;
+                font-family: $mainFont;
+                color: hsl(100 100 100);
+                font-size: 13px;
+                font-weight: $thickReg;
+                margin-left: 5px;
+                box-shadow: 0px 10px 6px -2px rgba(76, 105, 173, 0.242);
+    
+                &:hover {
+                    background-color: hsl(233, 88%, 73%);
+                }
+
+                @include largeMobile {
+                    font-size: 20px;
+                    padding: 12px 70px 12px 55px;
+                }
+
+                @include fold {
+                    font-size: 13px;
+                    padding: 12px 65px 12px 45px;
+                }
+
+                @include large {
+                    font-size: 18px;
+                    padding: 14px 28px 14px 28px;
+                }
+            }
+        }
+    }
+}
